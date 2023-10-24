@@ -77,7 +77,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Support [Support](https://t.me/crazysupportz) They Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Support [Support](https://t.me/movie_a1) They Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     
                     disable_web_page_preview=True
                 )
@@ -100,7 +100,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ Support** [Support](https://t.me/crazysupportz)",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ Support** [Support](https://t.me/movie_a1)",
                 
                 disable_web_page_preview=True)
             return
@@ -123,7 +123,7 @@ async def private_receive_handler(c: Client, m: Message):
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🖥️  ꜱᴛʀᴇᴀᴍ  🖥️", url=shortened_link),
                  InlineKeyboardButton('📥  ᴅᴏᴡɴʟᴏᴀᴅ  📥', url=shortened_online_link)],
-                [InlineKeyboardButton('🎪  ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ  🎪', url='https://telegram.me/snfilmy')]])
+                [InlineKeyboardButton('🎪  ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ  🎪', url='https://t.me/ilove_ram/139')]])
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -166,7 +166,7 @@ async def channel_receive_handler(bot, broadcast):
                 [
                     [InlineKeyboardButton("🖥️  ꜱᴛʀᴇᴀᴍ  🖥️", url=shortened_link),
                      InlineKeyboardButton('📥  ᴅᴏᴡɴʟᴏᴀᴅ  📥', url=shortened_online_link)],
-                    [InlineKeyboardButton('🎪  ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ  🎪', url='https://telegram.me/snfilmy')]
+                    [InlineKeyboardButton('🎪  ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ  🎪', url='https://t.me/ilove_ram/139')]
                 ]
             )
         )
