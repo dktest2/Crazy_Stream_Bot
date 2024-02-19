@@ -21,7 +21,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
 def shorten_url(url, api_key):
     try:
-        response = requests.get(f"https://onepagelink.in/api?api={api_key}&url={url}") #change shortner site 
+        response = requests.get(f"https://earnpro.in/api?api={api_key}&url={url}") #change shortner site 
         if response.status_code == 200:
             return response.json()["shortenedUrl"]
         else:
